@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: url(/media/wallpaperjpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.center-pos {
+    display: grid; 
+    grid-template-columns: 10% 80% 50%; 
+    grid-template-rows: 1fr; 
+    gap: 1px 0px; 
+    grid-template-areas: 
+      ". . ."; 
+}
+.info-zone {
+
+    background-color: rgb(210, 255, 255);
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+   
+    justify-content: center;
+   
+    /* учитываем последующее добавление элементов */
+   
+    flex-direction: column;}
+
+h1,h3 {
+    text-align: center;
+    
+}
+
+p {
+    width: 70%;
+    font-style: italic;
+    text-align: center;
+}
+/* .rules-image {
+    background: url(/media/icons/Меню-арт-м_05.jpg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    left: 10%;
+} */
+@media screen and (max-width: 768px) {
+    p {
+        width: 100%;
+    }
+    .rules-image {
+        left: -10%;
+    }
+}
+@media screen and (max-width: 1045px){
+    .rules-image {
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 551px) {
+.center-pos {
+    display: block;
+}
+}
+/* .rules-image-2 {
+    background: url(/media/icons/Меню-арт-м_14.jpg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+} */

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A629849d7cb6e4cd351ad576b10db27b71fa02ba4873ffab5d4e37e3d0a110c4f&amp;lang=en_FR&amp;id=map&amp;scroll=true"></script>    <link rel="stylesheet" href="main_page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+  <header>
+    <div class="container-xxl">
+      <div class="header-button-menu">
+        <div class="overlay"></div> <!-- Этот блок создаст затемнение -->
+        <div class="image-container">
+            <h1 class="slide-up">Арт-мастерская</h1>
+            <h1 id="slide-up-2">Хамелеон</h1>
+            <div class="company-logo-name"></div>
+          <img id="firstSlide" src="/media/desktop-version-slideshow/image1.jpg" class="active">
+          <img id="secondSlide" src="media/desktop-version-slideshow/image2.jpg">
+          <img id="thirdSlide" src="media/desktop-version-slideshow/image3.jpg">
+          <!-- <img src="media/mobile-version-slideshow/1.jpg" class="mobile-version">
+          <img src="media/mobile-version-slideshow/2.jpg" class="mobile-version">
+          <img src="media/mobile-version-slideshow/3.jpg" class="mobile-version">
+          <img src="media/mobile-version-slideshow/4.jpg" class="mobile-version">
+          <img src="media/mobile-version-slideshow/5.jpg" class="mobile-version"> -->
+          <!-- Добавьте другие изображения по аналогии -->
+        </div>
+      </div>
+    </div>
+</header>
+<nav>
+  <div class="container">
+    <h1 style="text-align: center;">Навигация по сайту</h1>
+    
+    <div class="navigation">
+          <div id="#about-us" class="block" style="background-image: url('/media/navigation-blocks-images/8.jpg');">
+              <a href="#about-us" style="width: 100%; height: 100%; padding-top: 90px;">О нас</a>
+            </div>
+            <div class="block" style="background-image: url('/media/navigation-blocks-images/3.jpg');">
+              <a style="width: 100%; height: 100%; padding-top: 90px;" href="other__pages/master_classes/master_classes.html"  >Мастер классы</a>
+            </div>
+            <div class="block" style="background-image: url('/media/navigation-blocks-images/7.jpg');">
+              <a style="width: 100%; height: 100%; padding-top: 90px;" href="/other__pages/Gallery/gallery.php">Галерея</a>
+            </div>
+            <div class="block" style="background-image: url('/media/navigation-blocks-images/2.jpg');">
+                <a style="width: 100%; height: 100%; padding-top: 90px;" href="/other__pages/rules/rules.html">Правила мастерской</a>
+              </div>
+            <div class="block" style="background-image: url('/media/navigation-blocks-images/1.jpg');">
+              <a style="width: 100%; height: 100%; padding-top: 90px;" href="">Абонементы</a>
+            </div>
+            <div class="block" style="background-image: url('/media/navigation-blocks-images/4.jpg');">
+              <a style="width: 100%; height: 100%; padding-top: 90px;" href="/other__pages/certificats/certificats.html">Подарочный сертификат<br>
+                <p style="text-align: center; font-size: 12px">Коворкинг, обжиг</p>
+              </a>
+            </div>
+    </div>
+</div>
+</nav>
+
+<main>
+  <div class="container-fluid">
+    <div id="about-us" class="about-us">
+        <div class="about-us-text">
+          <h1 style="font-style: italic;">О нас</h1>
+    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      Арт-мастерская Хамелеон, расположилась в уютном  двухэтажном пространстве в 5 минутах от метро Нагорная.
+      У нас вы найдете занятия, которые придутся вам по душе, позволят воплотить в жизнь ваш творческие идеи и насладиться увлекательным процессом при работе с глиной. 
+      Наши мастера — люди, вдохновленные керамикой, всегда подскажут, расскажут и помогут вам добиться желаемого результата в воплощении ваших творческих идей.
+      Мы используем только безопасные и экологичные материалы. Это обеспечивает идеальную основу для творчества и воплощения идей. У нас каждый найдет то, что соответствует его внутреннему вдохновению. 
+    </p>    
+    </div>
+    <div id="hcg-slider-1" class="hcg-slider">
+        <div class="hcg-slide-container">
+        <div class="hcg-slider-body">
+            <a class="hcg-slides animated" style="display:flex">
+x
+            </a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+  <div class="container-fluid m-0">
+  <div class="find-us-block row">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-0 p-0" id="map">
+      
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 find-us-text">
+  <img src="/media/find-us-pictures/image1.jpg" class="main-image-thumbnail" id="mainImage">
+<div class="gallery">
+    <img src="/media/find-us-pictures/image1.jpg" class="thumbnail" onclick="changeImage('/media/find-us-pictures/image1.jpg')">
+    <img src="/media/find-us-pictures/image2.jpg" class="thumbnail" onclick="changeImage('/media/find-us-pictures/image2.jpg')">
+    <img src="/media/find-us-pictures/image3.jpg" class="thumbnail" onclick="changeImage('/media/find-us-pictures/image3.jpg')">
+</div>        
+<h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Арт-мастерская <br>Хамелеон</h1>
+        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Номер телефона: <a href="tel+79255400336" style="color: white; text-decoration: underline;">+7 925 540-03-36</a></p>
+        <p>Телеграмм:<a href="https://t.me/hameleonceramic">hameleonceramic</a></p>
+    </div>
+  </div>
+
+</div>
+<div class="social-networks">
+<a href="https://vk.com/hameleonceramic"><img style="margin-top: 70px;" src="/media/network-icons/vk.png" alt=""></a>
+<a href="https://t.me/hameleonceramic"><img src="/media/network-icons/Tg.png" alt=""></a>
+</div>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <script>
+      (() => {
+        //If you want to add more images, add the link name and URL image URL in the array list below.
+            const images_list = [
+        {
+            "url": "/media/location.jpg",
+            "alt": "",
+            "name": "image 1",
+            "link": ""
+        },
+        {
+            "url": "media/desktop-version-slideshow/image2.jpg",
+            "alt": "",
+            "name": "image 2",
+            "link": ""
+        },
+        {
+            "url": "media/msg-1002119380957-622.jpg",
+            "alt": "",
+            "name": "image 3",
+            "link": ""
+        },
+
+            ];
+        
+            let slider_id = document.querySelector("#hcg-slider-1");
+        
+            // append all images
+            let dots_div = "";
+            let images_div = "";
+            for (let i = 0; i < images_list.length; i++) {
+                // if no link without href="" tag
+                let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+                images_div += '<a'+href+' class="hcg-slides"'+(i === 0 ? ' style="display:flex"':'')+'>'+
+                                '<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+                             '</a>';
+            }
+            slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+            let slide_index = 0;
+        
+            const images = slider_id.querySelectorAll(".hcg-slides");
+            const showSlides = () => {
+                if (slide_index > images.length-1) {
+                    slide_index = 0;
+                }
+                if (slide_index < 0) {
+                    slide_index = images.length-1;
+                }
+                for (let i = 0; i < images.length; i++) {
+                    images[i].style.display = "none";
+                    if (i == slide_index) {
+                        images[i].style.display = "flex";
+                    }
+                }
+            }
+        
+            // auto play
+            setInterval(() => {
+                slide_index++;
+                showSlides();
+            }, 4000);
+        
+        })();
+
+const images = document.querySelectorAll('.image-container img');
+let currentImageIndex = 0;
+if (window.innerWidth < 576) {
+  let image1 = document.getElementById('firstSlide');
+  let image2 = document.getElementById('secondSlide');
+  let image3 = document.getElementById('thirdSlide');
+  image1.src = '/media/mobile-version-slideshow/1.jpg';
+  image2.src = '/media/mobile-version-slideshow/2.jpg';
+  image3.src = '/media/mobile-version-slideshow/3.jpg';
+}
+else {
+    let image1 = document.getElementById('firstSlide');
+  let image2 = document.getElementById('secondSlide');
+  let image3 = document.getElementById('thirdSlide');
+  image1.src = '/media/desktop-version-slideshow/image1.jpg';
+  image2.src = '/media/desktop-version-slideshow/image2.jpg';
+  image3.src = '/media/desktop-version-slideshow/image3.jpg';
+}
+function showImage(index) {
+  images.forEach((image, i) => {
+    if (i === index) {
+      image.classList.add('active');
+    } else {
+      image.classList.remove('active');
+    }
+  });
+  
+}
+currentImageIndexForMobileVersion = [3, 4, 5, 6, 7]
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  showImage(currentImageIndex);
+}
+
+// Вызовите функцию nextImage каждые 5 секунд
+setInterval(nextImage, 4000);
+    </script>
+</body>
+</html>
